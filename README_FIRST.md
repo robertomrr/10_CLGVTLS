@@ -145,6 +145,8 @@
         Alterar \config\app.php para: (Linha 73 do arquivo )
             De 'timezone' => 'UTC',
             P\ 'timezone' => 'America/Sao_Paulo',
+        
+        
         > git add .
         > git commit -m "Configuração do Idioma/Timezone" 
         > git checkout main
@@ -207,3 +209,96 @@
     Sincronizar com o GitHub:
 
     > git push origin v1.0.0
+
+## Apontar banco de dados no arquivo .env ( De laravel P/ db_sll)
+
+        DB_CONNECTION=mysql
+        DB_HOST=127.0.0.1
+        DB_PORT=3306
+        DB_DATABASE=db_sll
+        DB_USERNAME=root
+        DB_PASSWORD=
+
+## Instalação do Laravel Breeze
+
+    Criar branch Instalação do Laravel Breeze
+        > git branch Instalação-Laravel-Breeze
+        > git checkout Instalação-Laravel-Breeze
+ 
+    Instalar o pacote Breeze via Composer:
+        > composer require laravel/breeze --dev
+
+    Executar o comando para instalar o Breeze:
+        > php artisan breeze:install
+
+            C:\laragon\www\10_CLGVTLS>php artisan breeze:install
+
+            Which Breeze stack would you like to install?
+            Blade with Alpine ....................................................................................... blade
+            Livewire (Volt Class API) with Alpine ................................................................ livewire
+            Livewire (Volt Functional API) with Alpine ................................................ livewire-functional
+            React with Inertia ...................................................................................... react
+            Vue with Inertia .......................................................................................... vue
+            API only .................................................................................................. api
+            ❯ blade
+
+            Would you like dark mode support? (yes/no) [no]
+            ❯ yes
+
+            Which testing framework do you prefer? [Pest]
+            Pest ........................................................................................................ 0
+            PHPUnit ..................................................................................................... 1
+            ❯ 1
+
+            INFO  Installing and building Node dependencies.
+
+
+            added 122 packages, and audited 145 packages in 16s
+
+            36 packages are looking for funding
+            run `npm fund` for details
+
+            found 0 vulnerabilities
+
+            > build
+            > vite build
+
+                vite v5.4.8 building for production...
+                transforming...
+                ✓ 54 modules transformed.
+                rendering chunks...
+            computing gzip size...
+            public/build/manifest.json             0.27 kB │ gzip:  0.15 kB
+            public/build/assets/app-Bmlgr_5j.css  43.28 kB │ gzip:  7.74 kB
+            public/build/assets/app-DI6-W-r-.js   79.43 kB │ gzip: 29.59 kB
+            ✓ built in 987ms
+
+
+            INFO  Breeze scaffolding installed successfully.
+
+
+            C:\laragon\www\10_CLGVTLS>
+            
+    Execute as migrações para criar as tabelas de usuários e senhas no banco de dados:
+        > php artisan migrate:fresh
+
+    Instalar dependencias
+        > npm install
+
+    Descomentar database\seeders\DatabaseSeeder.php
+        \App\Models\User::factory(10)->create();
+
+    Popular tabela users
+        > php artisan db:seed
+
+    Ativar serviços
+        > npm run dev
+        > php artisan serve
+
+    Finalizar branch Instalação do Laravel Breeze
+        > git add .
+        > git commit -m "Instalação-Laravel-Breeze" 
+        > git checkout main
+        > git merge Instalação-Laravel-Breeze
+        > git branch -d Instalação-Laravel-Breeze
+        > git push origin main
