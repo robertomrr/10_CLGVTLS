@@ -199,4 +199,11 @@
         > git merge Instalação-Livewire-E-Criação-Componente
         > git branch -d Instalação-Livewire-E-Criação-Componente
         > git push origin main
-        
+
+## Criação de tag anotada para marcar a versão v1.0.0:
+
+    > git tag -a v1.0.0 -m "Primeira versão - Livewire instalado"
+
+    Sincronizar com o GitHub:
+
+    > git push origin v1.0.0
