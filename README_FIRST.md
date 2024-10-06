@@ -278,7 +278,7 @@
 
 
             C:\laragon\www\10_CLGVTLS>
-            
+
     Execute as migrações para criar as tabelas de usuários e senhas no banco de dados:
         > php artisan migrate:fresh
 
@@ -297,6 +297,8 @@
 
     Finalizar branch Instalação do Laravel Breeze
         > git add .
+            warning: in the working copy of 'README_FIRST.md', CRLF will be replaced by LF the next time Git touches it
+            warning: in the working copy of 'package.json', CRLF will be replaced by LF the next time Git touches it
         > git commit -m "Instalação-Laravel-Breeze" 
         > git checkout main
         > git merge Instalação-Laravel-Breeze
