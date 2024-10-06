@@ -19,7 +19,7 @@
 - **[Vite](https://vitejs.dev//)**
 - **[Tailwind](https://tailwindcss.com/docs/installation/)**
 
-## Sistema de nomeação 
+## Sistema de nomeação
 
     Aplicação =>  10_CLGVTLS
 
@@ -202,7 +202,7 @@
         > git branch -d Instalação-Livewire-E-Criação-Componente
         > git push origin main
 
-## Criação de tag anotada para marcar a versão v1.0.0:
+## Criação de tag anotada para marcar a versão v1.0.0
 
     > git tag -a v1.0.0 -m "Primeira versão - Livewire instalado"
 
