@@ -308,4 +308,8 @@
 ## Implementar CRUD Users
 
     > php artisan make:livewire UsersTable
+
+## TODO
+
+    Implementar Header e footer utilizando Componentes e Slotes blade
     
