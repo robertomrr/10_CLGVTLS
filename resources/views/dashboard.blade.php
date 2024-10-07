@@ -11,6 +11,13 @@
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     {{ __("You're logged in!") }}
                 </div>
+                <hr>
+                <br>
+                <div class="grid grid-cols-3">
+                    <div><a href="{{   url('Ex_Lw') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Rota NÃO Nomeada Ex_Lw</a></div>
+                    <div><a href="{{ route('RotaNomeada') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Rota Nomeada Users CRUD</a></div>                    
+                    <div><a href="{{   url('Users') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Rota NÃO Nomeada Users CRUD</a></div>
+                </div>                
             </div>
         </div>
     </div>

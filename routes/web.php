@@ -18,3 +18,28 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+/** 
+ * ! Abaixo segue implementações sobre a instalação padrão.
+ * */ 
+
+
+Route::get('/Ex_Lw', function () {
+    return view('Ex_LivewireView');
+});
+
+
+// Rotas NÃO nomeadas _________________________________________________________________________________________
+// Link de acesso <a href="{{ url('Users') }}">Ir para a página Users CRUD</a>
+// Uso: O método url() é utilizado para gerar uma URL com base no caminho direto da URL. 
+// Ele é útil quando você deseja especificar o caminho exato para uma rota sem se preocupar com o nome da rota. 
+
+Route::get('/Users', function () {
+    return view('UsersView');
+});
+
+// Rotas nomeadas _____________________________________________________________________________________________
+//Rota nomeada permite invocar utilizando o comando  <a href="{{ route('Users') }}">Ir para a página Users CRUD</a>
+Route::get('/RotaNomeada', function () {
+    return view('UsersView');
+})->name('RotaNomeada');

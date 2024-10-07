@@ -286,7 +286,7 @@
         > npm install
 
     Descomentar database\seeders\DatabaseSeeder.php
-        \App\Models\User::factory(10)->create();
+        \App\Models\User::factory(100)->create();
 
     Popular tabela users
         > php artisan db:seed
@@ -304,3 +304,8 @@
         > git merge Instalação-Laravel-Breeze
         > git branch -d Instalação-Laravel-Breeze
         > git push origin main
+
+## Implementar CRUD Users
+
+    > php artisan make:livewire UsersTable
+    

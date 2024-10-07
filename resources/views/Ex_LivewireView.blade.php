@@ -5,7 +5,8 @@
     @livewireStyles
 </head>
 <body>
-    <!-- Seu conteúdo aqui -->
+    {{-- Este é um comentário no Blade --}}
+    <!-- Este é um comentário html -->
     @livewire('ExLivewireViewComponent')
 
     @livewireScripts
