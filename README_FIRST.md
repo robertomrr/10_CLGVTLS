@@ -312,4 +312,8 @@
 ## TODO
 
     Implementar Header e footer utilizando Componentes e Slotes blade
-    
+
+## Criação do componente header
+
+    > php artisan make:component header
+

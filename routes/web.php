@@ -43,3 +43,9 @@ Route::get('/Users', function () {
 Route::get('/RotaNomeada', function () {
     return view('UsersView');
 })->name('RotaNomeada');
+
+// Rotas nomeadas _____________________________________________________________________________________________
+// Componentes
+Route::get('/app', function () {
+    return view('/_root/appView');
+})->name('RotaNomeada');
