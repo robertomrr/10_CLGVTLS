@@ -48,4 +48,4 @@ Route::get('/RotaNomeada', function () {
 // Componentes
 Route::get('/app', function () {
     return view('/_root/appView');
-})->name('RotaNomeada');
+})->name('PreparandoHeader');

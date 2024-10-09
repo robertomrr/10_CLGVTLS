@@ -15,7 +15,7 @@
                 <br>
                 <div class="grid grid-cols-3">
                     <div><a href="{{   url('Ex_Lw') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Rota NÃO Nomeada Ex_Lw</a></div>
-                    <div><a href="{{ route('RotaNomeada') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Rota Nomeada Users CRUD</a></div>                    
+                    <div><a href="{{ route('PreparandoHeader') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Preparando o Header</a></div>                    
                     <div><a href="{{   url('Users') }}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Rota NÃO Nomeada Users CRUD</a></div>
                 </div>                
             </div>
