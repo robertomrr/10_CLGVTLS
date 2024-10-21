@@ -18,6 +18,7 @@
 - **[git version 2.46.2.windows.1](https://github.com//)**
 - **[Vite](https://vitejs.dev//)**
 - **[Tailwind](https://tailwindcss.com/docs/installation/)**
+- **[SweetAlert](https://sweetalert2.github.io/)**
 
 ## Sistema de nomeação
 
